@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Strata\\MuPlugin\\Acf": "src"
+            "Strata\\MuPlugin\\Acf\\": "src"
         }
     }
 }
