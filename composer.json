@@ -8,7 +8,9 @@
             "email": "frank@francoisfaubert.com"
         }
     ],
-    "require": {},
+    "require": {
+        "francoisfaubert/strata": ">=v0.1a.6",
+    },
     "autoload": {
         "psr-4": {
             "Strata\\MuPlugin\\Acf\\": "src"
