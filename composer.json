@@ -1,0 +1,17 @@
+{
+    "name": "francoisfaubert/strata-acf-autoloader-mu-plugin",
+    "description": "A must use plugin that autoloads and autosaved ACF configurations.",
+    "type": "wordpress-muplugin",
+    "authors": [
+        {
+            "name": "Francois Faubert",
+            "email": "frank@francoisfaubert.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Strata\\MuPlugin\\ACF": "src"
+        }
+    }
+}
