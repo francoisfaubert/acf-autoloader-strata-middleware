@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "francoisfaubert/strata": ">=v0.1a.6",
+        "francoisfaubert/strata": ">=v0.1",
     },
     "autoload": {
         "psr-4": {
