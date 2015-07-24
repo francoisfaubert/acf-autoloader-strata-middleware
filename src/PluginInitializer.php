@@ -1,6 +1,6 @@
 <?php
 
-namespace Strata\MuPlugin\ACF;
+namespace Strata\MuPlugin\Acf;
 
 class PluginInitializer extends \Strata\Plugin\Plugin {
 

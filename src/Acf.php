@@ -1,6 +1,6 @@
 <?php
 
-namespace Strata\MuPlugin\ACF;
+namespace Strata\MuPlugin\Acf;
 
 use Strata\Strata;
 
