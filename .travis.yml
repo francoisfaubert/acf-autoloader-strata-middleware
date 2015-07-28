@@ -8,6 +8,14 @@ php:
 before_script:
   - composer self-update
   - composer update --prefer-source
+  - echo DB_HOST=localhost >> .env
+  - echo DB_NAME=test_strata >> .env
+  - echo DB_USER=root >> .env
+  - echo DB_PASSWORD= >> .env
+  - echo WP_ENV=development >> .env
+  - echo WP_HOME=http://127.0.0.1:5454 >> .env
+  - echo WP_SITEURL=http://127.0.0.1:5454/wp >> .env
+  - ./strata db create
 script: ./strata test
 notifications:
   email:
