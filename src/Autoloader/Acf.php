@@ -1,6 +1,6 @@
 <?php
 
-namespace Strata\MuPlugin\Acf;
+namespace Strata\Middleware\Acf_Autoloader\Autoloader\Acf;
 
 use Strata\Strata;
 
@@ -19,18 +19,24 @@ class Acf {
     public function load($paths)
     {
         unset($paths[0]);
-        $paths[] = \Strata\Strata::getConfigurationPath() . self::FOLDER_NAME;
+        $paths[] = $this->getConfigurationPath();
         return $paths;
     }
 
     public function save($paths)
     {
-        $path = Strata::getConfigurationPath() . self::FOLDER_NAME;
+        $path = $this->getConfigurationPath();
+
         if (!is_dir($path)) {
             mkdir($path);
         }
 
         return $path;
+    }
+
+    private function getConfigurationPath()
+    {
+        return Strata::getConfigurationPath() . self::FOLDER_NAME;
     }
 
 }
