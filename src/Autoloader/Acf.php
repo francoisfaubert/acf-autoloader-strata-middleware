@@ -1,6 +1,6 @@
 <?php
 
-namespace Strata\Middleware\Acf_Autoloader\Autoloader\Acf;
+namespace Strata\Middleware\Acf_Autoloader\Autoloader;
 
 use Strata\Strata;
 
