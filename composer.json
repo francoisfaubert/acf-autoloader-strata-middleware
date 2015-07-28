@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "francoisfaubert/strata": ">=v0.1"
+        "francoisfaubert/strata": ">=v0.2",
+        "composer/installers" : "~1.0"
     },
     "autoload": {
         "psr-4": {
