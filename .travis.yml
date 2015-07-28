@@ -8,7 +8,7 @@ php:
 before_script:
   - composer self-update
   - composer update --prefer-source
-script: return 1
+script: ./strata test
 notifications:
   email:
     - frank@francoisfaubert.com
