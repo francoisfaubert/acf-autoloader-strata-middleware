@@ -6,7 +6,8 @@ php:
   - hhvm
   - nightly
 before_script:
-  - composer create-project francoisfaubert/strata-env test
+  - composer self-update
+  - composer create-project francoisfaubert/strata-env test --prefer-source
   - cd test
   - echo DB_HOST=localhost >> .env
   - echo DB_NAME=test_strata >> .env
