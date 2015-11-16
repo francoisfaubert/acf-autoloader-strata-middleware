@@ -12,16 +12,16 @@ class Acf {
     {
         if (function_exists("get_field")) {
             add_filter('acf/settings/save_json', array($this, "save"));
-            add_filter('acf/settings/load_json', array($this, "load"));
+            // add_filter('acf/settings/load_json', array($this, "load"));
         }
     }
 
-    public function load($paths)
-    {
-        unset($paths[0]);
-        $paths[] = $this->getConfigurationPath();
-        return $paths;
-    }
+    // public function load($paths)
+    // {
+    //     unset($paths[0]);
+    //     $paths[] = $this->getConfigurationPath();
+    //     return $paths;
+    // }
 
     public function save($paths)
     {
