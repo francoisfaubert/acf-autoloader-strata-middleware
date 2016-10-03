@@ -8,10 +8,6 @@
             "email": "frank@francoisfaubert.com"
         }
     ],
-    "require": {
-        "francoisfaubert/strata": ">=v0.2",
-        "composer/installers" : "~1.0"
-    },
     "autoload": {
         "psr-4": {
             "Strata\\Middleware\\Acf_Autoloader\\": "src"
